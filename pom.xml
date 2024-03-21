@@ -29,14 +29,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 			<scope>compile</scope>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-security</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-thymeleaf</artifactId>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>edu.canisius.cyb600</groupId>
+			<artifactId>module8-ssl-tls</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -54,7 +59,7 @@
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>libs/</classpathPrefix>
 							<mainClass>
-								edu.canisius.cyb600.module8.InsecureApplication
+								edu.canisius.cyb600.module8.X509AuthenticationServer
 							</mainClass>
 						</manifest>
 					</archive>
